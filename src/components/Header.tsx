@@ -1,8 +1,8 @@
 import React from "react";
 import "../_index.scss";
 import RidentLogo from "../components/svg/RidentLogo";
-import Nav from "./Nav";
-import User from "./User";
+import Nav from "./header/Nav";
+import User from "./header/User";
 
 type Props = {};
 

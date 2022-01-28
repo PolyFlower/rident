@@ -1,5 +1,5 @@
 import React from "react";
-import UserIcon from "./svg/UserIcon";
+import UserIcon from "../svg/UserIcon";
 
 type Props = {};
 
