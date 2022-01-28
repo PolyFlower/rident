@@ -1,0 +1,14 @@
+@use "../vars";
+
+.user-cnt {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 24px;
+
+	.user-icon {
+		height: 50%;
+		fill: $white-theme-color;
+	}
+}
