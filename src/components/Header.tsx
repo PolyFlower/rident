@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.scss";
+import "../_index.scss";
 import RidentLogo from "../components/svg/RidentLogo";
 import Nav from "./Nav";
 import User from "./User";
