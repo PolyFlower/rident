@@ -6,8 +6,8 @@ type Props = {};
 const Nav = (props: Props) => {
 	return (
 		<nav>
-			<NavButton label="Home" />
-			<NavButton label="Cars for Sale" />
+			<NavButton label="Offers" />
+			<NavButton label="Locations" />
 			<NavButton label="Reviews" />
 		</nav>
 	);

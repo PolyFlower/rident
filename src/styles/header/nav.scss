@@ -3,16 +3,24 @@
 nav {
 	display: flex;
 	flex-grow: 1;
-	justify-content: space-evenly;
+	justify-content: space-around;
 
 	.nav-button {
 		display: flex;
 		align-items: center;
+		margin: 0 24px 0 24px;
 		a {
 			font-family: $montserrat-family;
+			font-size: 14px;
 			font-weight: 400;
 			text-decoration: none;
-			color: black;
+			color: $white-theme-color;
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	nav {
+		display: none;
 	}
 }
