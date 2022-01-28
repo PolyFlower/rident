@@ -1,0 +1,16 @@
+@use "../vars";
+
+header {
+	display: flex;
+	height: 64px;
+	background-color: $white-theme-color;
+	justify-content: space-evenly;
+	.logo-cnt {
+		display: flex;
+		flex-grow: 0; // Put 1 here later
+		svg {
+			fill: $pink-theme-color;
+			height: 100%;
+		}
+	}
+}
