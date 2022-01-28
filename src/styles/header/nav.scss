@@ -1,0 +1,18 @@
+@use "../vars";
+
+nav {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-evenly;
+
+	.nav-button {
+		display: flex;
+		align-items: center;
+		a {
+			font-family: $montserrat-family;
+			font-weight: 400;
+			text-decoration: none;
+			color: black;
+		}
+	}
+}
