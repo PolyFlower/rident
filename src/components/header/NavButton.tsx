@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
 	label: string;
@@ -8,7 +9,7 @@ type Props = {
 const NavButton = (props: Props) => {
 	return (
 		<div className="nav-button">
-			<a href={props.href}>{props.label}</a>
+			<Link to={props.href}>{props.label}</Link>
 		</div>
 	);
 };

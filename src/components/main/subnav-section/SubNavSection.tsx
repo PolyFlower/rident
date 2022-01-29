@@ -1,19 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
 const SubNavSection = (props: Props) => {
 	return (
 		<div className="subnav-content">
-			<a className="subnav-label" href="/">
+			<Link className="subnav-label" to="/">
 				Home
-			</a>
-			<a className="subnav-divider" href="/">
-				{">"}
-			</a>
-			<a className="subnav-label-active" href="offers">
+			</Link>
+			<span className="subnav-divider">{">"}</span>
+			<Link className="subnav-label-active" to="/offers">
 				Offers
-			</a>
+			</Link>
 		</div>
 	);
 };
