@@ -1,0 +1,18 @@
+@import "styles/vars";
+@import "styles/header/_index.scss";
+@import "styles/main/_index.scss";
+
+body {
+	font-family: $open-sans-family;
+	overflow: hidden;
+	font-size: 14px;
+	min-height: 100%;
+	border: 0px;
+	box-sizing: border-box;
+	font-weight: normal;
+	height: 100%;
+	letter-spacing: 0px;
+	padding: 0px;
+	position: relative;
+	vertical-align: baseline;
+}
