@@ -11,8 +11,8 @@ const App = (props: Props) => {
 	return (
 		<>
 			<Routes>
-				<Route path="/" element={<Home />}></Route>
-				<Route path="offers" element={<Offers />}></Route>
+				<Route path="/" element={<Home />} />
+				<Route path="offers" element={<Offers />} />
 			</Routes>
 		</>
 	);
