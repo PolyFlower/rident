@@ -1,0 +1,30 @@
+@import "./section-one/index";
+@import "./subnav-section/index";
+
+#content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	.content-wrapper {
+		display: flex;
+		max-width: 1280px;
+		width: 100%;
+		flex-wrap: wrap;
+
+		.section-wrapper {
+			margin: 0 24px 0 24px;
+			display: flex;
+			width: 100%;
+
+			.section-content {
+				width: 100%;
+
+				.section {
+					display: flex;
+				}
+			}
+		}
+	}
+}
