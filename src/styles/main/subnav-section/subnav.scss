@@ -1,0 +1,21 @@
+.subnav-content {
+	margin: 12px 4px 12px;
+	width: 100%;
+	.subnav-divider {
+		padding: 0 12px 0 12px;
+		text-decoration: none;
+		pointer-events: none;
+		vertical-align: text-bottom;
+	}
+	.subnav-label {
+		color: black;
+		text-decoration: none;
+		font-size: 12px;
+		&-active {
+			color: black;
+			font-size: 12px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
+}
