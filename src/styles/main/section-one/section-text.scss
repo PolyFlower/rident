@@ -1,0 +1,16 @@
+.section-one-text {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	font-family: $montserrat-family;
+	width: 100%;
+	span {
+		flex-basis: 100%;
+	}
+	.one {
+		font-size: 32px;
+	}
+	.two {
+		font-size: 16px;
+	}
+}
