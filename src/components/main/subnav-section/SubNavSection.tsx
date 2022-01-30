@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-type Props = {};
+const SubNavSection = (props: any) => {
+	const currentPath = useLocation();
 
-const SubNavSection = (props: Props) => {
 	return (
 		<div className="subnav-content">
-			<Link className="subnav-label" to="/">
+			<Link className={currentPath.pathname === "/" ? "subnav-label-active" : "subnav-label"} to="/">
 				Home
 			</Link>
 			<span className="subnav-divider">{">"}</span>
-			<Link className="subnav-label-active" to="/offers">
+			<Link className={currentPath.pathname === "/offers" ? "subnav-label-active" : "subnav-label"} to="/offers">
 				Offers
 			</Link>
 		</div>
