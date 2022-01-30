@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import SaleIllustration from "../components/main/section-one/SaleIllustration";
@@ -10,8 +9,6 @@ import SubNavSection from "../components/main/subnav-section/SubNavSection";
 type Props = {};
 
 const Offers = (props: Props) => {
-	const currentPath = useLocation();
-
 	return (
 		<>
 			<Header />
