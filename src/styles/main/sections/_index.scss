@@ -1,16 +1,24 @@
-.section-one-text {
+.section-illustration {
+	min-width: 223px;
+	padding: 0 56px;
+	svg {
+		width: 223px;
+	}
+}
+
+.section-text {
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
 	font-family: $montserrat-family;
-	width: 100%;
+	flex-basis: 100%;
 	span {
 		flex-basis: 100%;
 	}
-	.one {
+	.title {
 		font-size: 32px;
 	}
-	.two {
+	.sub-title {
 		font-size: 16px;
 	}
 }
