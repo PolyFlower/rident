@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import Content from "../components/main/Content";
-import SectionWrapper from "../components/main/SectionWrapper";
+import Content from "../components/main/grid/Content";
+import SectionWrapper from "../components/main/grid/SectionWrapper";
 import SubNavSection from "../components/main/subnav/SubNavSection";
 
 type Props = {};
