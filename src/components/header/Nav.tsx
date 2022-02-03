@@ -7,7 +7,7 @@ const Nav = (props: Props) => {
 	return (
 		<nav>
 			<NavButton href="/" label="Home" />
-			<NavButton href="/offers" label="Offers" />
+			<NavButton href="/" label="Offers" />
 			<NavButton href="/" label="Locations" />
 			<NavButton href="/" label="Reviews" />
 		</nav>

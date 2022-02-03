@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import SaleIllustration from "../components/main/section-one/SaleIllustration";
-import SectionText from "../components/main/section-one/SectionText";
+import SaleIllustration from "../components/main/sections/SaleIllustration";
+import SectionText from "../components/main/sections/SectionText";
 import SectionWrapper from "../components/main/SectionWrapper";
-import SubNavSection from "../components/main/subnav-section/SubNavSection";
+import SubNavSection from "../components/main/subnav/SubNavSection";
 
 type Props = {};
 

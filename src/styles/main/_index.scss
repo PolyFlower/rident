@@ -23,8 +23,19 @@
 
 				.section {
 					display: flex;
+					justify-content: center;
 				}
 			}
 		}
+	}
+}
+
+aside {
+	height: 500px;
+	min-width: 250px;
+	margin-right: 24px;
+	background-color: black;
+	@media (max-width: 768px) {
+		display: none;
 	}
 }
