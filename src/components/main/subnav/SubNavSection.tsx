@@ -10,7 +10,7 @@ const SubNavSection = (props: any) => {
 				Home
 			</Link>
 			<span className="subnav-divider">{">"}</span>
-			<Link className={currentPath.pathname === "/offers" ? "subnav-label-active" : "subnav-label"} to="/offers">
+			<Link className={currentPath.pathname === "/offers" ? "subnav-label-active" : "subnav-label"} to="/">
 				Offers
 			</Link>
 		</div>
