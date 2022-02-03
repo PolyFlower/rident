@@ -7,11 +7,6 @@
 	overflow: hidden;
 	margin: 6px 0;
 
-	.active {
-		color: white;
-		background: $pink-theme-color;
-	}
-
 	&__item {
 		background: #fff;
 		color: #333;
@@ -27,9 +22,9 @@
 		background: #edf1f5;
 	}
 
-	.breadcrumbs__item:focus:after,
-	.breadcrumbs__item:focus,
-	.breadcrumbs__item.is-active:focus {
+	&__item:focus:after,
+	&__item:focus,
+	&__item.is-active:focus {
 		background: #323f4a;
 		color: #fff;
 	}
@@ -57,43 +52,4 @@
 	&__item.is-active {
 		background: #edf1f5;
 	}
-
-	// font-family: $oswald-family;
-	// font-size: 16px;
-	// gap: 16px;
-	// padding: 0;
-	// margin: 8px 0;
-	// display: grid;
-	// grid-template-columns: repeat(4, 0.1fr);
-	// height: 30px;
-	// justify-content: flex-start;
-	// align-items: center;
-	// width: 100%;
-	// &__item {
-	// 	transition: all 0.1s ease-in;
-	// 	padding: 0 18px;
-	// 	letter-spacing: 1px;
-	// 	text-transform: uppercase;
-	// 	display: inline-flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	height: 100%;
-	// 	background-color: white;
-	// 	border-radius: 5px;
-	// 	box-shadow: 0 2px 5px rgb(0 0 0 / 26%);
-	// 	transform: skew(-21deg);
-	// 	&:hover {
-	// 		background-color: $pink-theme-color;
-	// 		color: white;
-	// 	}
-	// }
-	// &__cnt {
-	// 	display: flex;
-	// 	transform: skew(21deg);
-	// }
 }
-
-// ul,
-// li {
-// 	list-style: none;
-// }
