@@ -5,15 +5,14 @@ const SubNavSection = (props: any) => {
 	const currentPath = useLocation();
 
 	return (
-		<div className="subnav-content">
-			<Link className={currentPath.pathname === "/" ? "subnav-label-active" : "subnav-label"} to="/">
-				Home
+		<nav className="bread-crumb">
+			<Link to={currentPath.pathname} className="bread-crumb__item">
+				<span className="bread-crumb__cnt">Home</span>
 			</Link>
-			<span className="subnav-divider">{">"}</span>
-			<Link className={currentPath.pathname === "/offers" ? "subnav-label-active" : "subnav-label"} to="/">
-				Offers
+			<Link to={currentPath.pathname} className="bread-crumb__item is-active">
+				<span className="bread-crumb__cnt">Browse</span>
 			</Link>
-		</div>
+		</nav>
 	);
 };
 

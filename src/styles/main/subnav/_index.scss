@@ -1,21 +1,99 @@
-.subnav-content {
-	margin: 12px 4px 12px;
-	width: 100%;
-	.subnav-divider {
-		padding: 0 12px 0 12px;
-		text-decoration: none;
-		pointer-events: none;
-		vertical-align: text-bottom;
+.bread-crumb {
+	font-family: $montserrat-family;
+	padding: 0;
+	border: 1px solid #cbd2d9;
+	border-radius: 0.3rem;
+	display: inline-flex;
+	overflow: hidden;
+	margin: 6px 0;
+
+	.active {
+		color: white;
+		background: $pink-theme-color;
 	}
-	.subnav-label {
-		color: black;
+
+	&__item {
+		background: #fff;
+		color: #333;
+		outline: none;
+		padding: 0.75em 0.75em 0.75em 1.25em;
+		position: relative;
 		text-decoration: none;
-		font-size: 12px;
-		&-active {
-			color: black;
-			font-size: 12px;
-			font-weight: bold;
-			text-decoration: underline;
-		}
+		transition: background 0.2s linear;
 	}
+
+	&__item:hover:after,
+	&__item:hover {
+		background: #edf1f5;
+	}
+
+	.breadcrumbs__item:focus:after,
+	.breadcrumbs__item:focus,
+	.breadcrumbs__item.is-active:focus {
+		background: #323f4a;
+		color: #fff;
+	}
+
+	&__item::after,
+	&__item::before {
+		background: white;
+		bottom: 0;
+		-webkit-clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+		clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+		content: "";
+		left: 100%;
+		position: absolute;
+		top: 0;
+		transition: background 0.2s linear;
+		width: 1em;
+		z-index: 1;
+	}
+
+	&__item:before {
+		background: #cbd2d9;
+		margin-left: 1px;
+	}
+
+	&__item.is-active {
+		background: #edf1f5;
+	}
+
+	// font-family: $oswald-family;
+	// font-size: 16px;
+	// gap: 16px;
+	// padding: 0;
+	// margin: 8px 0;
+	// display: grid;
+	// grid-template-columns: repeat(4, 0.1fr);
+	// height: 30px;
+	// justify-content: flex-start;
+	// align-items: center;
+	// width: 100%;
+	// &__item {
+	// 	transition: all 0.1s ease-in;
+	// 	padding: 0 18px;
+	// 	letter-spacing: 1px;
+	// 	text-transform: uppercase;
+	// 	display: inline-flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	height: 100%;
+	// 	background-color: white;
+	// 	border-radius: 5px;
+	// 	box-shadow: 0 2px 5px rgb(0 0 0 / 26%);
+	// 	transform: skew(-21deg);
+	// 	&:hover {
+	// 		background-color: $pink-theme-color;
+	// 		color: white;
+	// 	}
+	// }
+	// &__cnt {
+	// 	display: flex;
+	// 	transform: skew(21deg);
+	// }
 }
+
+// ul,
+// li {
+// 	list-style: none;
+// }
