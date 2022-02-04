@@ -1,10 +1,10 @@
 import React from "react";
-import Sale from "../../svg/Sale";
+import Sale from "../../../static/sale.png";
 
 const SaleIllustration = (props: any) => {
 	return (
 		<div className="section-illustration">
-			<Sale />
+			<img src={Sale} alt="sale illustration" />
 		</div>
 	);
 };
