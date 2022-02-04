@@ -2,7 +2,7 @@ import * as React from "react";
 import { SVGProps } from "react";
 
 const Sale = (props: SVGProps<SVGSVGElement>) => (
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="12 64 500 500" {...props}>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 35 475 475" {...props}>
 		<defs>
 			<clipPath id="a">
 				<path
