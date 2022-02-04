@@ -9,7 +9,7 @@ const SubNavSection = (props: any) => {
 			<Link to={currentPath.pathname} className="bread-crumb__item">
 				<span className="bread-crumb__cnt">Home</span>
 			</Link>
-			<Link to={currentPath.pathname} className="bread-crumb__item is-active">
+			<Link to={currentPath.pathname} className="bread-crumb__item active">
 				<span className="bread-crumb__cnt">Browse</span>
 			</Link>
 		</nav>
