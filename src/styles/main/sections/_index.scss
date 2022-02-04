@@ -1,12 +1,11 @@
 .section-illustration {
-	min-width: 320px;
-	width: 320px;
-	svg {
-		height: 320px;
-	}
+	min-width: 250px;
+	width: 250px;
+	display: inline-flex;
 }
 
 .section-text {
+	margin-left: 24px;
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
@@ -17,8 +16,14 @@
 	}
 	.title {
 		font-size: 32px;
+		@media (max-width: 768px) {
+			font-size: 24px;
+		}
 	}
 	.sub-title {
 		font-size: 16px;
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
 	}
 }
