@@ -1,7 +1,6 @@
 nav {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	justify-content: space-evenly;
+	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 
 	.nav-button {
@@ -23,8 +22,8 @@ nav {
 	}
 }
 
-@media (max-width: 768px) {
-	nav {
-		display: none;
-	}
-}
+// @media (max-width: 768px) {
+// 	nav {
+// 		display: none;
+// 	}
+// }

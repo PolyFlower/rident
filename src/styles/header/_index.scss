@@ -14,7 +14,8 @@ header {
 		height: 100%;
 		align-items: center;
 		display: grid;
-		grid-template-columns: 0.25fr 1fr;
+		grid-template-columns: 0.1fr 1fr;
+		justify-items: start;
 		.logo-cnt {
 			height: 56px;
 			svg {

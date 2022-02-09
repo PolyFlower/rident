@@ -1,11 +1,8 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import Content from "../components/main/grid/Content";
-import SectionWrapper from "../components/main/grid/SectionWrapper";
-import SaleIllustration from "../components/main/sections/SaleIllustration";
-import SectionText from "../components/main/sections/SectionText";
-import SubNavSection from "../components/main/subnav/SubNavSection";
+import BreadCrumbs from "../components/main/subnav/BreadCrumbs";
 
 type Props = {};
 
@@ -14,17 +11,14 @@ const Home = (props: Props) => {
 		<>
 			<Header />
 			<Main>
-				<SectionWrapper>
-					<SubNavSection />
-				</SectionWrapper>
-				<SectionWrapper>
-					<SaleIllustration />
-					<SectionText />
-				</SectionWrapper>
-				<SectionWrapper>
-					<aside></aside>
-					<Content />
-				</SectionWrapper>
+				<div className="section-wrapper">
+					<div className="section-content">
+						<div className="section" style={{ justifyContent: "flex-start" }}>
+							<BreadCrumbs />
+						</div>
+					</div>
+				</div>
+				<Outlet />
 			</Main>
 		</>
 	);

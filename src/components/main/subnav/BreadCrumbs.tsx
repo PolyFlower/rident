@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const SubNavSection = (props: any) => {
+const BreadCrumbs = (props: any) => {
 	const currentPath = useLocation();
 
 	return (
@@ -16,4 +16,4 @@ const SubNavSection = (props: any) => {
 	);
 };
 
-export default SubNavSection;
+export default BreadCrumbs;

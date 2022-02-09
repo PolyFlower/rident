@@ -11,6 +11,22 @@ interface Props {
 }
 
 const GridSlot = (props: Props) => {
+	function between(x: number, min: number, max: number) {
+		return x >= min && x <= max;
+	}
+
+	const ratingStyle = (rating: string) => {
+		const floatRating = parseFloat(rating);
+		switch (true) {
+			case between(floatRating, 4.5, 5.0):
+				return "excellent";
+			case between(floatRating, 3.5, 4.5):
+				return "good";
+			case between(floatRating, 0, 3.5):
+				return "bad";
+		}
+	};
+
 	return (
 		<div className="grid-slot">
 			<span className="car__type">{props.type}</span>
@@ -25,10 +41,11 @@ const GridSlot = (props: Props) => {
 				<div className="car__rating">
 					<div className="rating__wrapper">
 						User rating:
-						<span className="excellent">{props.user_rating} ✦</span>
+						<span className={ratingStyle(props.user_rating)}>{props.user_rating} ✦</span>
 					</div>
 					<div className="rating__wrapper">
-						Expert rating: <span className="good">{props.expert_rating} ✦</span>
+						Expert rating:
+						<span className={ratingStyle(props.expert_rating)}>{props.expert_rating} ✦</span>
 					</div>
 				</div>
 				<div className="car__reviews">
