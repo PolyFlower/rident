@@ -17,7 +17,6 @@ const Content = (props: Props) => {
 		await fetch("https://rident.herokuapp.com/car", requestOptions)
 			.then((res) => res.json())
 			.then((res) => {
-				console.log(res);
 				fetchCars(res);
 			});
 	}
