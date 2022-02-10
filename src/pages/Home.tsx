@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
-import Main from "../components/Main";
-import BreadCrumbs from "../components/main/subnav/BreadCrumbs";
+import Header from "components/Header";
+import Main from "components/Main";
+import BreadCrumbs from "components/main/subnav/BreadCrumbs";
 
 type Props = {};
 

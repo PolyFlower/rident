@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Car } from "./Car";
+import { Car } from "interfaces/Car";
 import GridSlot from "./GridSlot";
 import SectionWrapper from "./SectionWrapper";
 

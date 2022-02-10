@@ -1,5 +1,5 @@
 import React from "react";
-import RidentLogo from "../components/svg/RidentLogo";
+import RidentLogo from "svg/RidentLogo";
 import Nav from "./header/Nav";
 
 type Props = {};
