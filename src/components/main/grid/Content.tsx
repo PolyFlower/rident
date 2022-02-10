@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Car } from "interfaces/Car";
 import GridSlot from "./GridSlot";
 import SectionWrapper from "./SectionWrapper";
+import axios, { AxiosError, AxiosResponse } from "axios";
 
 type Props = {};
 
@@ -9,19 +10,18 @@ const Content = (props: Props) => {
 	const [Cars, fetchCars] = useState([]);
 
 	useEffect(() => {
-		const requestOptions: RequestInit = {
-			method: "GET",
-			headers: { "Content-Type": "application/json" }
+		const getCarObjects = async () => {
+			await axios
+				.get("https://rident.herokuapp.com/car")
+				.then((response: AxiosResponse) => fetchCars(response.data))
+				.catch((error: AxiosError) =>
+					error.response
+						? console.log(error.response.data)
+						: console.log(error.request)
+				);
 		};
-		const getCarObjects = async (options: RequestInit) => {
-			await fetch("https://rident.herokuapp.com/car", options)
-				.then((res) => res.json())
-				.then((res) => {
-					fetchCars(res);
-				});
-		};
-		getCarObjects(requestOptions);
-	});
+		getCarObjects();
+	}, []);
 
 	return (
 		<SectionWrapper style={{}}>
