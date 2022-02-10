@@ -26,6 +26,7 @@
 		max-width: 256px;
 		max-height: 448px;
 		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+		transition: transform 100ms ease-in-out;
 		@media (max-width: 1280px) {
 			max-height: 400px;
 			max-width: 224px;
@@ -37,6 +38,9 @@
 		@media (max-width: 768px) {
 			max-height: 600px;
 			max-width: 650px;
+		}
+		&:hover {
+			transform: scale3d(1.03, 1.03, 1.03);
 		}
 	}
 

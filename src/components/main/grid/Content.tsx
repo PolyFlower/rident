@@ -8,25 +8,23 @@ type Props = {};
 const Content = (props: Props) => {
 	const [Cars, fetchCars] = useState([]);
 
-	const requestOptions = {
-		method: "GET",
-		headers: { "Content-Type": "application/json" }
-	};
-
-	async function getData() {
-		await fetch("https://rident.herokuapp.com/car", requestOptions)
-			.then((res) => res.json())
-			.then((res) => {
-				fetchCars(res);
-			});
-	}
-
 	useEffect(() => {
-		getData();
-	}, []);
+		const requestOptions: RequestInit = {
+			method: "GET",
+			headers: { "Content-Type": "application/json" }
+		};
+		const getCarObjects = async (options: RequestInit) => {
+			await fetch("https://rident.herokuapp.com/car", options)
+				.then((res) => res.json())
+				.then((res) => {
+					fetchCars(res);
+				});
+		};
+		getCarObjects(requestOptions);
+	});
 
 	return (
-		<SectionWrapper>
+		<SectionWrapper style={{}}>
 			<div className="grid-wrapper">
 				{Cars.map((car: Car, idx: number) => {
 					return (

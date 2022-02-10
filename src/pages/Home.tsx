@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Header from "components/Header";
 import Main from "components/Main";
 import BreadCrumbs from "components/main/subnav/BreadCrumbs";
+import SectionWrapper from "components/main/grid/SectionWrapper";
 
 type Props = {};
 
@@ -11,13 +12,9 @@ const Home = (props: Props) => {
 		<>
 			<Header />
 			<Main>
-				<div className="section-wrapper">
-					<div className="section-content">
-						<div className="section" style={{ justifyContent: "flex-start" }}>
-							<BreadCrumbs />
-						</div>
-					</div>
-				</div>
+				<SectionWrapper style={{ justifyContent: "flex-start" }}>
+					<BreadCrumbs />
+				</SectionWrapper>
 				<Outlet />
 			</Main>
 		</>
