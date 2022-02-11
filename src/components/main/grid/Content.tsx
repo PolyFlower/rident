@@ -29,13 +29,13 @@ const Content = (props: Props) => {
 				{Cars.map((car: Car, idx: number) => {
 					return (
 						<GridSlot
-							img={car.img!}
-							description={car.description!}
-							label={car.label!}
-							price={car.price!}
-							expert_rating={car.expert_rating!}
-							user_rating={car.user_rating!}
-							type={car.type!}
+							img={car.img}
+							description={car.description}
+							label={car.label}
+							price={car.price}
+							expert_rating={car.expert_rating}
+							user_rating={car.user_rating}
+							type={car.type}
 						/>
 					);
 				})}

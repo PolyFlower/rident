@@ -1,21 +1,19 @@
 .bread-crumb {
 	font-family: $montserrat-family;
 	padding: 0;
-	border-radius: 5px;
 	display: inline-flex;
-	overflow: hidden;
 	margin-top: 12px;
-	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15);
+	gap: 6px;
 
 	&__item {
 		background: #fff;
 		color: #333;
+		border-radius: 4px;
 		outline: none;
 		padding: 0.5em 0.5em 0.5em 0.5em;
 		position: relative;
 		text-decoration: none;
-		transition: background 0.1s linear;
-		box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+		transition: backround-color 0.1s linear;
 	}
 
 	&__item:hover {

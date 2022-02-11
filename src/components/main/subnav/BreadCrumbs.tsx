@@ -18,22 +18,29 @@ const BreadCrumbs = (props: any) => {
 	paths.forEach((path, idx) => {
 		return idx === 0
 			? breadcrumbs.push({ to: "/", name: "Home" })
-			: breadcrumbs.push({ to: path, name: "".concat(path.charAt(0).toUpperCase(), path.slice(1)) });
+			: breadcrumbs.push({
+					to: path,
+					name: "".concat(path.charAt(0).toUpperCase(), path.slice(1))
+			  });
 	});
 
 	return (
-		<nav className="bread-crumb">
+		<ol className="bread-crumb">
 			{breadcrumbs.map((breadcrumb, idx) => {
 				return (
 					<Link
 						to={breadcrumb.to}
-						className={idx === breadcrumbs.length - 1 ? "bread-crumb__item active" : "bread-crumb__item"}
+						className={
+							idx === breadcrumbs.length - 1
+								? "bread-crumb__item active"
+								: "bread-crumb__item"
+						}
 					>
-						<span className="bread-crumb__cnt">{breadcrumb.name}</span>
+						<span>{breadcrumb.name}</span>
 					</Link>
 				);
 			})}
-		</nav>
+		</ol>
 	);
 };
 

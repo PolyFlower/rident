@@ -19,21 +19,21 @@
 		user-select: none;
 		display: grid;
 		// grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.1fr;
-		grid-template-rows: 0.1fr 0.1fr 1fr 0.3fr 0.1fr;
+		// grid-template-rows: 0.1fr 0.1fr 1fr 0.3fr 0.1fr;
 		// grid-template-rows: repeat(5, 0.1fr);
 		background-color: white;
 		border-radius: 5px;
-		max-width: 256px;
-		max-height: 448px;
+		// max-width: 256px;
+		// max-height: 448px;
 		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 		transition: transform 100ms ease-in-out;
 		@media (max-width: 1280px) {
-			max-height: 400px;
-			max-width: 224px;
+			// max-height: 400px;
+			// max-width: 224px;
 		}
 		@media (max-width: 1024px) {
-			max-height: 400px;
-			max-width: 224px;
+			// max-height: 400px;
+			// max-width: 224px;
 		}
 		@media (max-width: 768px) {
 			max-height: 600px;
@@ -63,8 +63,7 @@
 	.car__photo {
 		position: relative;
 		border-radius: 5px;
-		padding: 12px 48px;
-		padding-top: 0;
+		padding: 6px 48px;
 		align-self: end;
 
 		min-width: 128px;
