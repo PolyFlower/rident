@@ -63,15 +63,11 @@ const GridSlot = (props: IProps) => {
 						)}
 					</div>
 				</div>
-				<div className="car__reviews">
-					{props.expert_rating === "" && props.user_rating === "" ? (
-						<></>
-					) : (
-						<>
-							<a href="/">See reviews.</a>
-						</>
-					)}
-				</div>
+				{props.expert_rating === "" && props.user_rating === "" ? null : (
+					<div className="car__reviews">
+						<a href="/">See reviews.</a>
+					</div>
+				)}
 				<div className="car__info">{props.description}</div>
 			</div>
 			<div className="car__offers">

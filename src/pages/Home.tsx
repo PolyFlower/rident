@@ -4,6 +4,7 @@ import Header from "components/Header";
 import Main from "components/Main";
 import BreadCrumbs from "components/main/subnav/BreadCrumbs";
 import SectionWrapper from "components/main/grid/SectionWrapper";
+import Footer from "components/main/footer/Footer";
 
 type Props = {};
 
@@ -17,6 +18,7 @@ const Home = (props: Props) => {
 				</SectionWrapper>
 				<Outlet />
 			</Main>
+			<Footer />
 		</>
 	);
 };

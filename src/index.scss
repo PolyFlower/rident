@@ -1,6 +1,7 @@
 @import "styles/vars";
-@import "styles/header/_index.scss";
-@import "styles/main/_index.scss";
+@import "styles/header/index";
+@import "styles/main/index";
+@import "styles/footer/index";
 
 html {
 	font-size: 14px;
@@ -9,10 +10,7 @@ html {
 
 body {
 	font-family: $open-sans-family;
-	min-height: 100%;
-	min-width: 100%;
-	height: 100%;
-	width: 100%;
+	min-height: 100vh;
 	border: 0px;
 	box-sizing: border-box;
 	font-weight: normal;
@@ -20,4 +18,10 @@ body {
 	padding: 0px;
 	position: relative;
 	vertical-align: baseline;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
