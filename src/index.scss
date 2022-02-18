@@ -5,7 +5,9 @@
 
 html {
 	font-size: 14px;
-	overflow-y: scroll;
+	::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 body {
