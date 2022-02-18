@@ -1,9 +1,14 @@
+import LazySpinner from "components/lazy/LazyImage";
 import { Car } from "interfaces/Car";
-import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import React, { useState } from "react";
 
 interface IProps extends Car {}
 
 const GridSlot = (props: IProps) => {
+	const [loaded, setLoaded] = useState(false);
+
 	const between = (x: number, min: number, max: number) => {
 		return x >= min && x <= max;
 	};
@@ -25,7 +30,14 @@ const GridSlot = (props: IProps) => {
 			<span className="car__type">{props.type}</span>
 			<span className="car__name">{props.label}</span>
 			<div className="car__photo">
-				<img src={props.img} alt={props.label} />
+				{loaded ? null : <LazySpinner />}
+				<LazyLoadImage
+					style={loaded ? { width: "100%" } : { height: "0" }}
+					alt={props.label}
+					src={props.img}
+					effect="blur"
+					afterLoad={() => setLoaded(true)}
+				/>
 			</div>
 			<div className="car__description">
 				<div className="car__pricing">
