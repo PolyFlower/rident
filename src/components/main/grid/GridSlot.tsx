@@ -41,7 +41,15 @@ const GridSlot = (props: IProps) => {
 			</div>
 			<div className="car__description">
 				<div className="car__pricing">
-					Starting at:<span>{props.price}</span>
+					{props.price === "" ? (
+						<>
+							Starting at: <span>No price</span>
+						</>
+					) : (
+						<>
+							Starting at:<span>{props.price}</span>
+						</>
+					)}
 				</div>
 				<div className="car__rating">
 					<div className="rating__wrapper">
@@ -80,7 +88,13 @@ const GridSlot = (props: IProps) => {
 						<a href="/">See reviews.</a>
 					</div>
 				)}
-				<div className="car__info">{props.description}</div>
+				{props.description === "" ? (
+					<>
+						<span>No description</span>
+					</>
+				) : (
+					<div className="car__info">{props.description}</div>
+				)}
 			</div>
 			<div className="car__offers">
 				<button>Show Offers</button>
