@@ -15,6 +15,29 @@
 		grid-template-columns: repeat(1, 1fr);
 	}
 
+	@keyframes animation {
+		0% {
+			stroke-dasharray: 1 98;
+			stroke-dashoffset: -105;
+		}
+		50% {
+			stroke-dasharray: 80 10;
+			stroke-dashoffset: -160;
+		}
+		100% {
+			stroke-dasharray: 1 98;
+			stroke-dashoffset: -300;
+		}
+	}
+
+	#spinner {
+		transform-origin: center;
+		animation-name: animation;
+		animation-duration: 1.2s;
+		animation-timing-function: cubic-bezier;
+		animation-iteration-count: infinite;
+	}
+
 	.grid-slot {
 		user-select: none;
 		display: grid;
@@ -49,22 +72,26 @@
 		font-weight: 500;
 		display: grid;
 		align-items: center;
-		padding: 8px 12px;
+		margin: 8px 12px;
+		background-clip: content-box;
 	}
 
 	.car__name {
 		font-size: 1.1rem;
 		font-weight: 800;
-		justify-self: center;
-		padding: 12px;
-		padding-top: 0;
+		margin: 12px;
+		margin-top: 0;
+		background-clip: content-box;
+		justify-content: center;
+		text-align: center;
 	}
 
 	.car__photo {
 		position: relative;
-		border-radius: 5px;
-		padding: 6px 48px;
+		display: grid;
+		margin: 6px 12px;
 		align-self: end;
+		background-clip: content-box;
 
 		min-width: 128px;
 		.lazy-placeholder {
@@ -76,40 +103,18 @@
 		}
 	}
 
-	@keyframes animation {
-		0% {
-			stroke-dasharray: 1 98;
-			stroke-dashoffset: -105;
-		}
-		50% {
-			stroke-dasharray: 80 10;
-			stroke-dashoffset: -160;
-		}
-		100% {
-			stroke-dasharray: 1 98;
-			stroke-dashoffset: -300;
-		}
-	}
-
-	#spinner {
-		transform-origin: center;
-		animation-name: animation;
-		animation-duration: 1.2s;
-		animation-timing-function: cubic-bezier;
-		animation-iteration-count: infinite;
-	}
-
 	.car__description {
 		display: grid;
 		grid-template-rows: repeat(4, 0.1fr);
-		padding: 6px 12px;
+		margin: 6px 12px;
 
 		.car__pricing {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			justify-content: flex-start;
-			padding-bottom: 6px;
+			margin-bottom: 6px;
 			gap: 16px;
+			background-clip: content-box;
 			span {
 				font-weight: bold;
 			}
@@ -130,7 +135,8 @@
 			gap: 16px;
 			grid-template-columns: repeat(2, 1fr);
 			font-weight: 400;
-			padding-bottom: 6px;
+			margin-bottom: 6px;
+			background-clip: content-box;
 
 			.rating__wrapper {
 				display: grid;
@@ -154,7 +160,8 @@
 
 		.car__reviews {
 			font-weight: 500;
-			padding-bottom: 6px;
+			margin-bottom: 6px;
+			background-clip: content-box;
 			a {
 				text-decoration: none;
 				color: rgb(22, 107, 197);
@@ -164,15 +171,15 @@
 		.car__info {
 			font-family: $open-sans-family;
 			font-weight: 500;
-			padding-bottom: 6px;
+			margin-bottom: 6px;
 		}
 	}
 
 	.car__offers {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		padding: 6px 12px;
-		padding-bottom: 12px;
+		margin: 6px 12px;
+		margin-bottom: 12px;
 		align-items: end;
 		button {
 			cursor: pointer;
