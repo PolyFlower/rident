@@ -4,9 +4,11 @@
 
 `Select from wide range of options from dealerships`
 
-# Preview
+## Preview
 
-[![Demo](https://res.cloudinary.com/btchead/image/upload/v1646085784/chrome_PXX56ebdu1_tm0kr1.gif "Demo")](https://res.cloudinary.com/btchead/image/upload/v1646085784/chrome_PXX56ebdu1_tm0kr1.gif "Demo")
+Removed due to missing file on CDN
+
+<hr>
 
 ### Features
 
@@ -35,7 +37,3 @@ Work still in progress...
 
 > ...according to the Terms of Service, other users of GitHub.com have the right to **view** and **fork** your repository.
 > [GitHub licensing](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license "GitHub licensing help page")
-
-> **For users**
-> If you find software that doesn`t have a license, that generally means you have no permission from the creators of the software to use, modify, or share the software. Although a code host such as GitHub may allow you to view and fork the code, this does not imply that you are permitted to use, modify, or share the software for any purpose.
-> [No License](https://choosealicense.com/no-permission/ "No License")
