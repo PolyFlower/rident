@@ -5,8 +5,10 @@
 `Select from wide range of options from dealerships`
 
 ## Preview
+### Old screencast
+#### Can't bring myself to redeploy the app.
 
-Removed due to missing file on CDN
+![old screencast](https://i.imgur.com/FINk2So.gif)
 
 <hr>
 
